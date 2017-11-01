@@ -1,0 +1,115 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node', '/usr/bin/npm', 'publish' ]
+2 info using npm@3.10.10
+3 info using node@v6.11.5
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   escapedName: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: '/home/orlando/Documentos/repository',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory /home/orlando/.npm/platzom/0.1.0/package.tgz not in flight; packing
+9 verbose correctMkdir /home/orlando/.npm correctMkdir not in flight; initializing
+10 info lifecycle platzom@0.1.0~prepublish: platzom@0.1.0
+11 silly lifecycle platzom@0.1.0~prepublish: no script for prepublish, continuing
+12 verbose tar pack [ '/home/orlando/.npm/platzom/0.1.0/package.tgz',
+12 verbose tar pack   '/home/orlando/Documentos/repository' ]
+13 verbose tarball /home/orlando/.npm/platzom/0.1.0/package.tgz
+14 verbose folder /home/orlando/Documentos/repository
+15 verbose addLocalTarball adding from inside cache /home/orlando/.npm/platzom/0.1.0/package.tgz
+16 verbose correctMkdir /home/orlando/.npm correctMkdir not in flight; initializing
+17 silly cache afterAdd platzom@0.1.0
+18 verbose afterAdd /home/orlando/.npm/platzom/0.1.0/package/package.json not in flight; writing
+19 verbose correctMkdir /home/orlando/.npm correctMkdir not in flight; initializing
+20 verbose afterAdd /home/orlando/.npm/platzom/0.1.0/package/package.json written
+21 silly publish { name: 'platzom',
+21 silly publish   version: '0.1.0',
+21 silly publish   description: 'Traductor de idioma',
+21 silly publish   main: 'dist/src/platzom.js',
+21 silly publish   scripts: { build: 'babel srtc/platzom.js -d dist', test: 'mocha' },
+21 silly publish   repository:
+21 silly publish    { type: 'git',
+21 silly publish      url: 'git+https://github.com/caindestal/CursoJs.git' },
+21 silly publish   keywords: [ 'platzom', 'platzi' ],
+21 silly publish   author:
+21 silly publish    { name: 'Orlando Galicia',
+21 silly publish      email: 'orlandoj.galicia@gmail.com',
+21 silly publish      url: 'https://twitter.com/orlandog' },
+21 silly publish   license: 'MIT',
+21 silly publish   devDependencies:
+21 silly publish    { 'babel-cli': '^6.26.0',
+21 silly publish      'babel-preset-env': '^1.6.1',
+21 silly publish      chai: '^4.1.2',
+21 silly publish      mocha: '^4.0.1' },
+21 silly publish   readme: '# Platzom\n\nPLatzom es un idioma inventado y se hace on el objetivo de aprender los [fundamentos de JavaScrip] (https://platzi.com/js)\n\n## Descripción del idioma\n\n- si la palabra termina con "ar", se le quitan esas dos letras.\n- si la palabra inicioa con Z, se le añade "pe" al final.\n-si la palabra traducida tiene 10 o más letras, se debe partir por la mitad y unir con un guión medio.\n- por ultimo, si la palabra original es un palíndromo, ninguna regla anterior cuenta y se devuelve la misma palabra pero intercambiando letras mayúsculas y minúsculas. \n\n## Intalación\n\n```\nnpm install platzom\n```\n\n## Uso\n\n```\nìmport platzom from \'platzom\'\nplatzom("programar") // program\nplatzom("Zorro") // Zorrope\nplatzom("Zarpar") // Zarppe\nplatzom("abecedario") // abece-dario\nplatzom("sometemos") // SoMeTeMoS\n```\n\n## Créditos\n\n- [Orlando Galicia] (https://teitter.com/@orlandog)\n\n## Licencia\n\n[MIT](https://opensource.org/licenses/MIT)\n',
+21 silly publish   readmeFilename: 'README.md',
+21 silly publish   gitHead: '95ecaa3cbffb2118429ce060f1974f6360661847',
+21 silly publish   bugs: { url: 'https://github.com/caindestal/CursoJs/issues' },
+21 silly publish   homepage: 'https://github.com/caindestal/CursoJs#readme',
+21 silly publish   _id: 'platzom@0.1.0',
+21 silly publish   _shasum: '4986a46436fc2187e297586e368b854ae4d45e96',
+21 silly publish   _from: '.' }
+22 verbose getPublishConfig undefined
+23 silly mapToRegistry name platzom
+24 silly mapToRegistry using default registry
+25 silly mapToRegistry registry https://registry.npmjs.org/
+26 silly mapToRegistry data Result {
+26 silly mapToRegistry   raw: 'platzom',
+26 silly mapToRegistry   scope: null,
+26 silly mapToRegistry   escapedName: 'platzom',
+26 silly mapToRegistry   name: 'platzom',
+26 silly mapToRegistry   rawSpec: '',
+26 silly mapToRegistry   spec: 'latest',
+26 silly mapToRegistry   type: 'tag' }
+27 silly mapToRegistry uri https://registry.npmjs.org/platzom
+28 verbose publish registryBase https://registry.npmjs.org/
+29 silly publish uploading /home/orlando/.npm/platzom/0.1.0/package.tgz
+30 verbose request uri https://registry.npmjs.org/platzom
+31 verbose request sending authorization for write operation
+32 info attempt registry request try #1 at 16:08:43
+33 verbose request using bearer token for auth
+34 verbose request id d0384bc7a39f932c
+35 http request PUT https://registry.npmjs.org/platzom
+36 http 403 https://registry.npmjs.org/platzom
+37 verbose headers { 'content-type': 'application/json',
+37 verbose headers   'cache-control': 'max-age=300',
+37 verbose headers   'content-length': '101',
+37 verbose headers   'accept-ranges': 'bytes',
+37 verbose headers   date: 'Wed, 01 Nov 2017 20:10:05 GMT',
+37 verbose headers   via: '1.1 varnish',
+37 verbose headers   connection: 'keep-alive',
+37 verbose headers   'x-served-by': 'cache-mia17625-MIA',
+37 verbose headers   'x-cache': 'MISS',
+37 verbose headers   'x-cache-hits': '0',
+37 verbose headers   'x-timer': 'S1509567005.843101,VS0,VE370',
+37 verbose headers   vary: 'Accept-Encoding, Accept' }
+38 verbose request invalidating /home/orlando/.npm/registry.npmjs.org/platzom on PUT
+39 error publish Failed PUT 403
+40 verbose stack Error: You do not have permission to publish "platzom". Are you logged in as the correct user? : platzom
+40 verbose stack     at makeError (/usr/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:302:12)
+40 verbose stack     at CachingRegistryClient.<anonymous> (/usr/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:290:14)
+40 verbose stack     at Request._callback (/usr/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:210:14)
+40 verbose stack     at Request.self.callback (/usr/lib/node_modules/npm/node_modules/request/request.js:187:22)
+40 verbose stack     at emitTwo (events.js:106:13)
+40 verbose stack     at Request.emit (events.js:191:7)
+40 verbose stack     at Request.<anonymous> (/usr/lib/node_modules/npm/node_modules/request/request.js:1048:10)
+40 verbose stack     at emitOne (events.js:96:13)
+40 verbose stack     at Request.emit (events.js:188:7)
+40 verbose stack     at IncomingMessage.<anonymous> (/usr/lib/node_modules/npm/node_modules/request/request.js:969:12)
+41 verbose statusCode 403
+42 verbose pkgid platzom
+43 verbose cwd /home/orlando/Documentos/repository
+44 error Linux 4.10.0-38-generic
+45 error argv "/usr/bin/node" "/usr/bin/npm" "publish"
+46 error node v6.11.5
+47 error npm  v3.10.10
+48 error code E403
+49 error You do not have permission to publish "platzom". Are you logged in as the correct user? : platzom
+50 error If you need help, you may report this error at:
+50 error     <https://github.com/npm/npm/issues>
+51 verbose exit [ 1, true ]
